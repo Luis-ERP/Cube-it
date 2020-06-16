@@ -19,8 +19,13 @@ public class PlayerMovement : MonoBehaviour
     void Movement(Vector2 direction)
     {
         int score = cameraScript.GetComponent<Main>().score;
+        float magnitud = (float) Math.Sqrt(Math.Pow(direction.x, 2) + Math.Pow(direction.y, 2));
+        if (magnitud == 0f){
+        	magnitud = 1f;
+        }
+        Vector2 unitario = new Vector2(direction.x/magnitud, direction.y/magnitud);
         speed = SpeedFunction(score);
-        player.Translate(direction * speed * Time.deltaTime);
+        player.Translate(unitario * speed * Time.deltaTime);
     }
 
     float SpeedFunction(int _score)

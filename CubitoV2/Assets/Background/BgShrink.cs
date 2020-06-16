@@ -11,7 +11,7 @@ public class BgShrink : MonoBehaviour
     {
         transform.localScale -= Vector3.one * shrinkSpeed * Time.deltaTime;
 
-        if (transform.localScale.x <= 0.05f)
+        if (transform.localScale.x <= 0.01f)
         {
             Destroy(gameObject);
         }

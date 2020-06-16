@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Bumping : MonoBehaviour
 {
-    public float shrinkSpeed = 0.5f;
+    public float shrinkSpeed = 0.25f;
 
     public float amplitud = 0.08f;
     public float quantity = 20f;

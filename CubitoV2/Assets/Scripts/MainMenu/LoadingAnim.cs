@@ -12,10 +12,7 @@ public class LoadingAnim : MonoBehaviour
     public GameObject playBtnObj;
 
     RectTransform text;
-    RectTransform panel;
-
-    Image playBtn;
-    
+    RectTransform panel;    
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +22,6 @@ public class LoadingAnim : MonoBehaviour
         // transform
         text = GetComponent<RectTransform>();
         panel = panelObj.GetComponent<RectTransform>();
-        //  image
-        playBtn = playBtnObj.GetComponent<Image>();
 
         Color c = actualColor.color;
         c.a = 0f;
@@ -66,18 +61,6 @@ public class LoadingAnim : MonoBehaviour
         panelObj.GetComponent<Bumping>().enabled = true;
 
         yield return new WaitForSeconds(animDuration);
-
-        // Appear Btn
-        playBtnObj.SetActive(true);
-        for (float f = 0.05f; f <= 1; f += 0.05f)
-        {
-            Color c = playBtn.GetComponent<Image>().color;
-            c.a = f;
-            playBtn.color = c;
-            yield return new WaitForSeconds(animDuration);
-        }
-
-
     }
 
     public void StartAnimation()
