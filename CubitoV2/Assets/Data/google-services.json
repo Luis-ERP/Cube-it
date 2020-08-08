@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "702671029377",
+    "firebase_url": "https://cubeit-82a17.firebaseio.com",
+    "project_id": "cubeit-82a17",
+    "storage_bucket": "cubeit-82a17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702671029377:android:f789eb93fa26a8d546f980",
+        "android_client_info": {
+          "package_name": "com.EdezApps.CubeIt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702671029377-s894eb33r6oll5pr1ddicojrv6s3m7di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQWxxBNKbLxDOu02jyNiZfgo5By-qCwnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702671029377-s894eb33r6oll5pr1ddicojrv6s3m7di.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
